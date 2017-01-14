@@ -10,12 +10,14 @@ import { Subscription } from 'rxjs/Subscription'
 export class SubCompBComponent implements OnInit {
 
   subtitle = 'Sub Comp B'
+
   @Input() process: string
   subscription: Subscription
 
   constructor(private dataService: DataService) {
     this.subscription = dataService.processAnnounced$.subscribe(
       process => {
+        console.log('__SubCompB.init:', process)
         this.process = process
     });
   }
