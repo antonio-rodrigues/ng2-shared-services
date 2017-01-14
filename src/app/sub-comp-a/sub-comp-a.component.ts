@@ -17,7 +17,7 @@ export class SubCompAComponent implements OnInit, OnDestroy {
   constructor(private dataService: DataService) {
     this.subscription = dataService.processAnnounced$.subscribe(
       process => {
-        console.log('__SubCompAComponent.init:', process)
+        console.log('__SubCompA.init:', process)
         this.process = process
     });
   }

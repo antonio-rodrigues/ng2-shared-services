@@ -9,16 +9,11 @@ import { AppComponent } from './app.component';
 import { SubCompAComponent } from './sub-comp-a/sub-comp-a.component';
 import { SubCompBComponent } from './sub-comp-b/sub-comp-b.component';
 
-// import { MissionControlComponent } from './mission-control/mission-control.component';
-// import { AstronautComponent } from './astronaut/astronaut.component'
-
 @NgModule({
   declarations: [
     AppComponent,
     SubCompAComponent,
-    SubCompBComponent,
-    // MissionControlComponent,
-    // AstronautComponent
+    SubCompBComponent
   ],
   imports: [
     BrowserModule,
